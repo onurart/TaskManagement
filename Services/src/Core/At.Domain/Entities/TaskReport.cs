@@ -7,5 +7,7 @@ namespace At.Domain.Entities
         public string Definition { get; set; }
         public string Detail { get; set; }
         public int AppTaskId { get; set; }
+
+        public AppTask? AppTasks { get; set; }
     }
 }

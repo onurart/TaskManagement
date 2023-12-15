@@ -10,5 +10,11 @@ namespace At.Domain.Entities
     public sealed class Priority: Entity
     {
         public string Definition { get; set; }
+
+        #region  Navigation Properties
+        public List<AppTask> AppTasks { get; set; }
+
+        #endregion
+
     }
 }

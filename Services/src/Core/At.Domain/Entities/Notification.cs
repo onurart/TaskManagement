@@ -12,5 +12,6 @@ namespace At.Domain.Entities
         public string Description { get; set; }
         public bool State { get; set; }
         public int AppUserId { get; set; }
+        public AppUser Users { get; set; }
     }
 }

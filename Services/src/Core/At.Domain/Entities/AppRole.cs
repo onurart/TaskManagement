@@ -7,8 +7,11 @@ using System.Threading.Tasks;
 
 namespace At.Domain.Entities
 {
-    public sealed class AppRole: Entity
+    public sealed class AppRole : Entity
     {
         public string Definition { get; set; } = null!;
+        #region Navigation Properties
+        public List<AppUser>? Users { get; set; }
+        #endregion
     }
 }
